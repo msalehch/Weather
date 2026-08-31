@@ -1,0 +1,276 @@
+@font-face {
+  font-family: Estedad;
+  src: url("./font/Estedad-v5.0-Fontjo.com/estedad.woff2");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Estedad";
+}
+body {
+  background: #eef6ff;
+  color: #333;
+  line-height: 1.8;
+}
+header {
+  background: #1e88e5;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 60px;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 24px;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+nav a:hover {
+  color: #ffd54f;
+}
+.hero {
+  text-align: center;
+  padding: 70px 20px;
+  background-image: url("download-\(2\).png");
+  color: #2e2f8b;
+}
+.hero h1 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+.hero p {
+  margin-bottom: 25px;
+}
+.hero input {
+  width: 280px;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+}
+.hero button {
+  padding: 12px 20px;
+  border: none;
+  background: #ff9800;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.hero button:hover {
+  background: #f57c00;
+}
+section h2 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #1565c0;
+}
+.icons {
+  margin: 20px 0;
+  filter: brightness(0) saturate(100%) invert(74%) sepia(91%) saturate(2500%)
+    hue-rotate(355deg) brightness(103%) contrast(105%);
+}
+.m-icon {
+  filter: brightness(0) saturate(100%) invert(74%) sepia(91%) saturate(2500%)
+    hue-rotate(355deg) brightness(103%) contrast(105%);
+}
+.weather-card {
+  width: 360px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+.weather-card .weather-icon {
+  font-size: 70px;
+  color: orange;
+  margin-bottom: 15px;
+}
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+.details div {
+  text-align: center;
+}
+.city-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 20px;
+  padding: 20px 60px;
+}
+.city-card {
+  background: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.city-card:hover {
+  transform: translateY(-8px);
+}
+.service-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px 60px;
+}
+.service {
+  background: white;
+  border-radius: 15px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.service:hover {
+  transform: scale(1.05);
+}
+.forecast-title {
+  text-align: center;
+  padding: 40px;
+}
+.forecast-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 20px 60px;
+}
+.forecast-card {
+  background: white;
+  text-align: center;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+.forecast-card:hover {
+  transform: translateY(-8px);
+}
+.table-section {
+  padding: 40px;
+}
+table {
+  width: 90%;
+  margin: auto;
+  border-collapse: collapse;
+  background: white;
+}
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+th {
+  background: #1e88e5;
+  color: white;
+}
+.alert-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px 60px;
+}
+.alert {
+  background: #fff8e1;
+  border-right: 5px solid orange;
+  padding: 20px;
+  border-radius: 10px;
+}
+.alert img {
+  filter: brightness(0) saturate(100%) invert(74%) sepia(91%) saturate(2500%)
+    hue-rotate(355deg) brightness(103%) contrast(105%);
+}
+.about {
+  text-align: center;
+  padding: 60px;
+}
+.feature-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  padding: 20px 60px;
+}
+.feature {
+  background: white;
+  text-align: center;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.team-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.member {
+  background: white;
+  width: 220px;
+  text-align: center;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.member img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+.contact-info {
+  text-align: center;
+  padding: 40px;
+}
+.contact-info p {
+  margin: 10px;
+}
+footer {
+  background: #1565c0;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin-top: 40px;
+}
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .hero h1 {
+    font-size: 30px;
+  }
+  .hero input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .hero button {
+    width: 100%;
+  }
+  .weather-card {
+    width: 90%;
+  }
+  .details {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
